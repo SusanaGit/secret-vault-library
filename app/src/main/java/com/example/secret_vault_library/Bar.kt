@@ -10,7 +10,6 @@ import androidx.compose.material3.IconButton
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
-import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.res.colorResource
 import androidx.compose.ui.unit.dp
 
@@ -22,7 +21,7 @@ fun BarView(
 
     val navigationIcon : (@Composable () -> Unit)? =
         {
-            IconButton(onClick = {onBackNavClicked}) {
+            IconButton(onClick = { onBackNavClicked() }) {
                 Icon(
                     imageVector = Icons.AutoMirrored.Filled.ArrowBack,
                     tint = colorResource(id = R.color.color1),
