@@ -25,6 +25,6 @@ fun BarView(
             )
         },
         elevation = 3.dp,
-        backgroundColor = colorResource(id = R.color.teal_200)
+        backgroundColor = colorResource(id = R.color.bar)
     )
 }
