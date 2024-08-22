@@ -21,12 +21,14 @@ fun BarView(
 
     val navigationIcon : (@Composable () -> Unit)? =
         {
-            IconButton(onClick = { onBackNavClicked() }) {
-                Icon(
-                    imageVector = Icons.AutoMirrored.Filled.ArrowBack,
-                    tint = colorResource(id = R.color.color1),
-                    contentDescription = null
-                )
+            if(!title.contains("Secret Vault Library")) {
+                IconButton(onClick = { onBackNavClicked() }) {
+                    Icon(
+                        imageVector = Icons.AutoMirrored.Filled.ArrowBack,
+                        tint = colorResource(id = R.color.color1),
+                        contentDescription = null
+                    )
+                }
             }
         }
 
